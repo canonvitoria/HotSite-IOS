@@ -1,0 +1,354 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #242424;
+}
+
+h1 {
+    text-transform: uppercase;
+    padding-left: 40px;
+    font-size: 30px;
+    background-color: #0A7373;
+    color: white;
+    padding: 30px;
+}
+
+.conteudo {
+    height: 600px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+#logo {
+    padding-top: 50px;
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.textos {
+    display: inline-block;
+    width: 400px;
+    padding-left: 30px;
+}
+
+h2#titulo {
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+.textos p {
+    font-size: 24px;
+    text-align: justify;
+    word-wrap: break-word;
+    padding-bottom: 50px;
+}
+
+.wrap-btn {
+    display: inline-flex;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    background: #EDAA25;
+    border: none;
+    border-radius: 800px;
+    box-shadow: 5px 5px 40px #EDAA25;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+button::before {
+    content: '';
+    border-radius: 800px;
+    border: 2px solid #EDAA25;
+    box-shadow: 0 0 60px #edaa25b7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+    transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+    opacity: 1;
+}
+
+button::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #EDAA25;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+button:hover::after,
+button:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
+
+.descricao-completa {
+    background-color: #0A7373;
+    height: 1100px;
+}
+
+.descricao-completa>img {
+    width: 500px;
+    padding-left: 300px;
+    padding-top: 200px;
+}
+
+.textos-2 {
+    color: white;
+    width: 500px;
+    position: relative;
+    float: right;
+    padding-right: 300px;
+}
+
+h2#titulo-2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.textos-2 p {
+    font-size: 24px;
+    text-align: justify;
+    word-wrap: break-word;
+    padding-bottom: 50px;
+    color: white;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ef6132;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+li {
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+p.pequena-descricao {
+    font-size: 15px;
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+
+#título-formulario {
+    color: black;
+    background-color: white;
+    text-decoration: #ef6132 overline;
+}
+
+fieldset {
+    border: 0;
+}
+
+section.formulario {
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+    height: 800px;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+fieldset.campo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="number"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #0A7373;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #e4967ca7;
+}
+
+
+.input {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    background: #EDAA25;
+    border: none;
+    border-radius: 800px;
+    box-shadow: 5px 5px 40px #EDAA25;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+input::before {
+    content: '';
+    border-radius: 800px;
+    border: 2px solid #EDAA25;
+    box-shadow: 0 0 60px #edaa25b7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.input:hover, .button:focus {
+    transform: translateY(-6px);
+}
+
+.input:hover::before, button:focus::before {
+    opacity: 1;
+}
+
+.input::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #EDAA25;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.input:hover::after,.input:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
+
+div.resultado {
+    background-color: #269090a4;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.604);
+}
+
+#copy {
+    background-color: #0A7373;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#copy > a {
+    color: #4a2113;
+    text-decoration: none;
+}
+
+#copy > a:hover {
+    color: white;
+}
+
+.informacoes {
+    background-color: #0A7373;
+    height: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.informacoes > a {
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.informacoes > a:hover {
+    color: #4a2113;
+}
+
+.icon-redesociais {
+    width: 30px;
+}
