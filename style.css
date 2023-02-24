@@ -26,6 +26,7 @@ h1 {
     padding: 0 20px;
     padding-top: 80px;
     padding-bottom: 100px;
+    background-color: white;
 }
 
 #logo {
@@ -335,18 +336,6 @@ div.resultado {
     height: 100px;
     text-align: center;
     padding-top: 10px;
-}
-
-.informacoes > a {
-    color: aliceblue;
-    font-weight: bolder;
-    font-size: 18px;
-    text-decoration: none;
-    color: white;
-}
-
-.informacoes > a:hover {
-    color: #4a2113;
 }
 
 .icon-redesociais {
